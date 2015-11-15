@@ -1,0 +1,42 @@
+body {
+    padding-top:50px;  // Make up for top menu
+}
+
+#home {
+    padding-top:0
+}
+
+#home .navbar-brand {
+    padding:13.5px 15px 12.5px
+}
+
+#home .navbar-brand>img {
+    display:inline;
+    margin:0 10px;
+    height:100%
+}
+
+#banner {
+    //min-height:100px;
+    border-bottom:none
+}
+
+.section {
+    margin-top: 30px;
+}
+
+footer {
+    margin:5em 0
+}
+
+footer p {
+    clear:left;
+    margin-bottom:0
+}
+
+@media (max-width:767px) {
+    #banner {
+	margin-bottom:2em;
+	text-align:center
+    }
+}
