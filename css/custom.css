@@ -23,16 +23,31 @@ body {
 
 .section {
     margin-top: 30px;
+    font-size: 15pt;
 }
 
-footer {
-    margin:5em 0
+h1 {
+    font-size: 34pt;
 }
 
-footer p {
-    clear:left;
-    margin-bottom:0
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20pt;
 }
+
+.buy-button {
+    max-width: 500px;
+}
+
+//footer {
+//    margin:5em 0
+//}
+//
+//footer p {
+//    clear:left;
+//    margin-bottom:0
+//}
 
 @media (max-width:767px) {
     #banner {
