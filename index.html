@@ -38,12 +38,53 @@
           <h1>No More Lost Data</h1>
           <p class="lead">Get Rails Migrations Right</p>
 
-          <p>
-            Tom Morkes says bullet points here. Amy Hoy says pain.
-            Can be both.
-          </p>
-        </div>
-        <div class="col-md-6">
+          <p>You never sweat as hard as when you hit &quot;enter&quot;
+          on &quot;rake db:migrate&quot; on your prod data. Line for
+          line, no other code in Rails is as
+	  likely to destroy your users' data. Or get you fired.</p>
+
+	  <p>How often has a migration locked a big table, causing an
+	  hour of unexpected downtime? Or been fine in development,
+	  then died mid-deploy in production and you're suddenly
+	  sweating bullets and typing SQL on your production server,
+	  trying desperately to fix it at 2am?</p>
+
+	  <p>A migration is all the stress of raw SQL (did I forget an
+	  important 'where' clause? Is my join wrong?) with code you
+	  can't easily test. Every migration <i><b>starts</b></i> as
+	  weird dodgy legacy code.
+	  </p>
+
+	  <p>The more uptime you need, the worse migrations get. Want
+	  to delete a column? Want to be sure that ActiveRecord isn't
+	  ever using it? Good luck with that. Rolling deploys?
+	  Everything gets harder.
+	  </p>
+
+	  <p>
+	  Wouldn't it be great if migrations were just more code? If
+	  you could easily do good code reviews, and you knew
+	  Rails' weird hidden problems around migrations? If you could
+	  just do no-downtime deploys and rolling deploys without the
+	  slightest bit of fear?
+	  </p>
+
+	  <p> <b>No More Lost Data</b> is here for you. It has
+	  procedures to catch your migration bugs early, including
+	  difficult bugs with performance and production data. Code
+	  review guidelines, checklists, recipes for difficult
+	  operations... It's all there.
+	  </p>
+
+	  <p> Better yet, it explains <i>why</i> in great detail. Not
+	  every migration needs "DefCon 4" procedures. The best is to
+	  know <i>when</i> you need to worry and how to get rid of as
+	  much of it as possible. Fix your problems in staging, in
+	  code review, or by avoiding difficult situations entirely.
+	  A little experienced advice can go a long way.
+	  </p>
+	</div>
+	<div class="col-md-6">
           <img class="img-responsive" src="img/MigrationsCover.png"> </img>
         </div>
       </div>
@@ -81,8 +122,16 @@
 
       <div class="row section">
         <div class="col-md-12">
-          <h2>Pain/Dream/Fix GOES HERE</h2>
-          <p>Yup.</p>
+	  <h2>What You'll Get</h2>
+	  <ul>
+	    <li>An explanation of what's hard about migrations without
+	    downtime, or with low downtime</li>
+	    <li>The Big Checklist to catch migration problems early
+	    and not lose data</li>
+	    <li>Ten rules for code review of migrations</li>
+	    <li>Tricks, recipes, stories and explanations about
+        migrations and what can be hard about them</li>
+	  </ul>
         </div>
       </div>
 
@@ -94,27 +143,26 @@
 	  about. Often your customers' data.</p>
 
 	  <ul>
-	    <li>You're a professional Rails programmer and know that every
+	    <li>You're a professional Rails programmer? You know that every
 	    lost engineer hour costs your company around $100? It's for you.</li>
-	    <li>Running a busy site, and worried about data loss and
+	    <li>You're running a busy site, and worried about data loss and
 	    slow migrations? For you.</li>
 	    <li>Need to understand the tradeoff between migration
 	    complexity and downtime? For you.</li>
-	    <li>Writing code review guidelines for migrations on a
-	    team of professional programmers? Definitely for you.</li>
+	    <li>Need code review guidelines for migrations? Definitely for you.</li>
 	  </ul>
 
 	  <p>Alternately...</p>
 
 	  <ul>
-	    <li>Just learning Rails and don't know the basics of
+	    <li>Just learning Rails? Don't know the basics of
 	    migrations? Not for you. <a
 	    href="http://edgeguides.rubyonrails.org/active_record_migrations.html"
 	    target="_blank">Read the Rails Guide</a>, it's
 	    awesome.</li>
-	    <li>Don't mind spending many hours experimenting and reading blog posts for
+	    <li>You don't mind spending many hours experimenting and reading blog posts for
 	    the same info? Not for you. </li>
-	    <li>Don't care about site downtime during maintenance?
+	    <li>Don't care about site downtime during deploys?
 	    Probably not for you.</li>
 	    <li>Just running a development site for yourself? Probably not
 	    for you.</li>
@@ -124,6 +172,20 @@
 
       <div class="row section">
         <div class="col-md-12">
+
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-md-12">
+          <h2>Free Chapter and/or Sample Text and/or TOC</h2>
+          <p>Yup.</p>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-md-6">
+
           <h2>More Praise for Rebuilding Rails, by this author</h2>
 
 	  <blockquote><p>This is a must-have book for anyone seriously planning to work or working in Sinatra, Rails.</p><footer><strong>Satish Talim</strong> <cite><a href='https://www.facebook.com/rubylearning/posts/10151644050623920'>RubyLearning.com</a></cite></footer></blockquote>
@@ -132,28 +194,8 @@
 
 	  <blockquote><p>Thanks, Noah! Really jacked to read this highly recommended book by my teachers at University of Washington.</p><footer><strong>David Baynes</strong></footer></blockquote>
 
-
-          <blockquote><p>It was the perfect Christmas present to myself ;-)</p><p>Your flow and pedagogic style is just excellent, always dropping in some neat tricks along side the main topic.</p><footer><strong>Brian Cameron</strong></footer></blockquote>
-
-
           <p><img src="img/rr_goodreads_screenshot.png" width="500" height="218" title="People liked Rebuilding Rails." alt="A screenshot of Rebuilding Rails on GoodReads.com"></p>
 
-        </div>
-      </div>
-
-      <!--
-      <div class="row section">
-        <div class="col-md-12">
-          <h2>Free Chapter and/or Sample Text and/or TOC</h2>
-          <p>Yup.</p>
-        </div>
-      </div>
--->
-
-      <div class="row section">
-        <div class="col-md-6">
-          <h2>About the Author</h2>
-          <p>Yup.</p>
           <a class="btn btn-success btn-lg buy-button" href="https://gum.co/no-more-lost-data">Buy now on Gumroad!</a>
         </div>
 	<div class="col-md-6 visible-md-block visible-lg-block">
