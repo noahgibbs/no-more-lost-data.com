@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+  <title>No More Lost Data</title>
+
+  <style>
+.chapter { page-break-before: always; }
+
+h1 { page-break-after: avoid; }
+h2 { page-break-after: avoid; }
+h3 { page-break-after: avoid; }
+
+ul { page-break-inside: avoid; }
+
+.fullpagetitle {
+    page-break-before: always;
+    page-break-after: always;
+    font-size: 6em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@page { background: gray url(http://no-more-lost-data.com/img/paper.png) center repeat; }
+
+@page { size: US-Letter; }
+
+@page {
+    @bottom-left {
+	content: "No More Lost Data";
+    }
+    @bottom-right { 
+        content: counter(page);
+	font-style: italic
+    }
+}
+
+@page { margin: 40pt 30pt 40pt 30pt }
+
+.toc { width: 400px; }
+.toc a::after { content: leader(".") target-counter(attr(href), page); }
+
+.cover-page {
+  width: 7.5in;
+  height: 10in;
+}
+
+body {
+    background: #BBBBBB url(http://no-more-lost-data.com/img/paper.png) center repeat;
+}
+  </style>
+</head>
+
+<body>
+
+<h1>Part One</h1>
+
+<div class="toc">
+    <div><a href="#ch1">What's a Migration?</a></div>
+    <div><a href="#ch2">When and How Are Migrations Dangerous?</a></div>
+    <div><a href="#ch3">When Migrations Happen</a></div>
+    <div><a href="#ch4">The Big Migration and Deploy Checklist</a></div>
+</div>
+
+<h1>Part Two</h1>
+
+<div class="toc">
+  <div><a href="#ch5">Don't Change the Format of a Column</a></div>
+  <div><a href="#ch6">Don't Drop a Column If the App May Use It</a></div>
+  <div><a href="#ch7">Don't Use a Model In a Migrations</a></div>
+  <div><a href="#ch8">Keep Each Migration Small</a></div>
+  <div><a href="#ch9">Keep Most Migrations Harmless</a></div>
+  <div><a href="#ch10">For Potentially Harmful Migrations, Keep a Backup</a></div>
+  <div><a href="#ch11">Never Modify a Pushed Migration</a></div>
+  <div><a href="#ch12">Don't Add Data in a Migration</a></div>
+  <div><a href="#ch13">Test Rollback for your Migration</a></div>
+  <div><a href="#ch14">Periodically Compact Your Migrations</a></div>
+</div>
+
+<h1>Part Three</h1>
+
+<div class="toc">
+  <div><a href="#ch15">How to Change a Column's Type</a></div>
+  <div><a href="#ch16">ActiveRecord Loads the DB Columns Once</a></div>
+  <div><a href="#ch17">Irreversible Migrations and ActiveRecord Exceptions</a></div>
+  <div><a href="#ch18">Seed Data and rake db:populate</a></div>
+  <div><a href="#ch19">Multiple Environments for rake db:migrate</a></div>
+  <div><a href="#ch20">Paged Load in Migrations for Data Processing</a></div>
+  <div><a href="#ch21">Mismatches Between Database Schema</a></div>
+  <div><a href="#ch22">rake db:migrate vs db:reset</a></div>
+</div>
+</body> </html>
